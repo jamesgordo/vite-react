@@ -7,8 +7,8 @@ function App() {
   const [count, setCount] = useState(0);
 
   return (
-    <div className="App">
-      <div>
+    <div className="m-0 flex flex-col items-center justify-center min-w-[320px] min-h-screen">
+      <div className="flex gap-2">
         <a href="https://vitejs.dev" target="_blank">
           <img src={viteLogo} className="logo" alt="Vite logo" />
         </a>
@@ -16,9 +16,12 @@ function App() {
           <img src={reactLogo} className="logo react" alt="React logo" />
         </a>
       </div>
-      <h1>Vite + React</h1>
+      <h1 className="font-bold text-5xl">Vite + React</h1>
       <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
+        <button
+          className="rounded-lg border py-[0.6em] px-[1.2em] text-base font-medium bg-[#f9f9f9]"
+          onClick={() => setCount((count) => count + 1)}
+        >
           count is {count}
         </button>
         <p>
