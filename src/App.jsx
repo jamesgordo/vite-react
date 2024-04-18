@@ -2,6 +2,7 @@ import { useState } from 'react';
 import reactLogo from './assets/react.svg';
 import viteLogo from '/vite.svg';
 import './App.css';
+import Button from '@/components/ui/Button';
 
 function App() {
   const [count, setCount] = useState(0);
@@ -18,12 +19,12 @@ function App() {
       </div>
       <h1 className="font-bold text-5xl">Vite + React</h1>
       <div className="card">
-        <button
-          className="rounded-lg border py-[0.6em] px-[1.2em] text-base font-medium bg-[#f9f9f9]"
+        <Button
+          variant="secondary"
           onClick={() => setCount((count) => count + 1)}
         >
           count is {count}
-        </button>
+        </Button>
         <p>
           Edit <code>src/App.jsx</code> and save to test HMR
         </p>
